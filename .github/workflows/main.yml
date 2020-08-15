@@ -1,11 +1,16 @@
-- name: Scully Publish
-  uses: cmgriffing/scully-gh-pages-action@v9
-  with:
-    # A personal access token needed to push your site after it has been built.
-    access-token: 
-    # The branch expected by GitHub to have the static files needed for your site.
-    deploy-branch: gh-pages # optional, default is master
-    # Additional arguments that get passed to `npm run build`.
-    build-args: # optional, default is 
-    # Additional arguments that get passed to `npm run scully`.
-    scully-args: # optional, default is 
+name: Scully Publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: cmgriffing/scully-gh-pages-action@v1
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+
