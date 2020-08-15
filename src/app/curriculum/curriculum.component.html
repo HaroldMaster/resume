@@ -1,0 +1,150 @@
+<div class="contenedor">
+    <div class="header">
+      <div class="img-github hijo" *ngIf="_git.getUser | async as harold">
+        <h1>{{ harold.name }}</h1>
+        <img
+          class="avatar-harold"
+          src="{{ harold.avatar_url }}"
+          alt="Img Harold"
+        />
+        <p>{{ harold.bio }}</p>
+        <a href="https://github.com/HaroldMaster" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="mailto:bhflores1994@gmail.com" target="_blank"
+          ><i class="fas fa-envelope-square"></i
+        ></a>
+        <a href="https://api.whatsapp.com/send?phone=593999981332" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+    </div>
+    <hr />
+  
+    <div class="header">
+      <div class="skill">
+        <h2>SKILLS</h2>
+        <div *ngFor="let skill of data.skills">
+          <mat-card class="card">
+            <mat-card-header>
+              <div
+                mat-card-avatar
+                [ngStyle]="{
+                  'background-image': 'url(' + skill.icono + ')',
+                  'background-size': 'cover'
+                }"
+              ></div>
+              <mat-card-title>{{ skill.name }}</mat-card-title>
+            </mat-card-header>
+            <br />
+            <img
+              mat-card-image
+              src="{{ skill.img }}"
+              alt="Programming"
+              class="img-content"
+            />
+            <br />
+            <br />
+            <mat-card-content>
+              <p>
+                {{ skill.content }}
+              </p>
+            </mat-card-content>
+          </mat-card>
+          <br />
+        </div>
+      </div>
+      <div class="experience">
+        <h2>EXPERIENCE</h2>
+        <div *ngFor="let experience of data.experience">
+          <mat-card class="card">
+            <mat-card-header>
+              <div
+                mat-card-avatar
+                [ngStyle]="{
+                  'background-image': 'url(' + experience.img + ')',
+                  'background-size': 'cover'
+                }"
+              ></div>
+              <mat-card-title>{{ experience.enterprise }}</mat-card-title>
+            </mat-card-header>
+            <br />
+            <mat-card-content>
+              <p>
+                {{ experience.content }}
+              </p>
+            </mat-card-content>
+          </mat-card>
+          <br />
+        </div>
+        <h2>LANGUAGES</h2>
+        <ul>
+          <li>English - B1 Certificate</li>
+        </ul>
+        <h2>HIGHLIGHTS</h2>
+        <ul>
+          <li>
+            Publication of a scientific article in the IEEE database with the
+            topic: Serious Game, Gamified Applications, Educational Software: A
+            Comparative Study (10.1109 / ICI2ST.2019.00015)
+            <a href="https://ieeexplore.ieee.org/document/8940385"
+              >https://ieeexplore.ieee.org/document/8940385</a
+            >
+          </li>
+        </ul>
+        <h2>PROJECTS</h2>
+        <ul>
+          <li>
+            <a href="https://haroldmaster.github.io/Tutorial-Git/" target="_blank"
+              >Git Tutorial</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://haroldmaster.github.io/Tutorial-Github/"
+              target="_blank"
+              >Github Tutorial</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://haroldmaster.github.io/Tips-y-metodos-utiles-de-Javascript/"
+              target="_blank"
+              >Javascript Methods</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://haroldmaster.github.io/formulario-solo-con-DOM-validado/"
+              target="_blank"
+              >DOM Formulary</a
+            >
+          </li>
+          <li>
+            <a href="https://haroldmaster.github.io/fetch/" target="_blank"
+              >Fetch Use</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://haroldmaster.github.io/prank-propuesta/"
+              target="_blank"
+              >Prank</a
+            >
+          </li>
+          <li>
+            <a href="https://haroldmaster.github.io/sass-and-css/" target="_blank"
+              >Sass</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://haroldmaster.github.io/animaciones-eventos-jquery/"
+              target="_blank"
+              >JQuery</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
