@@ -34,10 +34,10 @@ export class DataService {
         content: "Knowledge of Git, Github, Bitbucket. Link: https://github.com/HaroldMaster"
       },
       {
-        name : "Others",
+        name : "Courses and Other Skills",
         icono: environment.url+"/assets/img/other-icon.png",
         img: environment.url+"/assets/img/other-img.png",
-        content: "Knowledge of computer and printer maintenance - Knowledge of computer architecture - Knowledge in networks (Certificate of the CEC EPN of CCNA module 1) - Knowledge of Windows, Windows Server and Linux operating systems (Ubuntu, CentOs) - Knowledge in BPMN - Knowledge of Software Quality"
+        content: "I have had the oportunity to study udemy courses as Advanced Sass and Css, Typescript, Angular, JQuery, Javascript, React. Also because of my work experience I have managed to obtain knowledge of computer manteinance, Wordpress, SEO, Digital Marketing, Networks, Linux, BPMN, etc."
       }
     ];
     this.experience = [
@@ -55,6 +55,11 @@ export class DataService {
         enterprise: "PACO",
         img: environment.url+"/assets/img/paco.png",
         content: "Developer analyst at PACO comercial. The contract lasted one month in June 2019. In this period I managed the billing system developed in Java with PostgreSQL database, also handling stored procedures in the SQL Server database."
+      },
+      {
+        enterprise: "CLEARMINDS",
+        img: environment.url+"/assets/img/clearminds.jfif",
+        content: "Software Developer at Clearminds. I worked in banking software consulting services where I used tools such as angular, javascript, java, sql server as well as the company's own tools."
       }
     ]
   }
