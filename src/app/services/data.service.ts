@@ -12,7 +12,7 @@ export class DataService {
       {
         name : "Programming Languages",
         icono: environment.url + "/assets/img/algoritmo.png",
-        img: environment.url+ "/assets/img/programming.jpg",
+        img: environment.url+ "/assets/img/programming.png",
         content: "Knowledge of Java, C #, JavaScript (Node, React, React Native with Expo, Express, Angular, JQuery, Promises, Ajax), HTML, CSS, Sass (BEM)"
       },
       {
@@ -59,7 +59,7 @@ export class DataService {
       {
         enterprise: "CLEARMINDS",
         img: environment.url+"/assets/img/clearminds.jfif",
-        content: "Software Developer at Clearminds. I worked in banking software consulting services where I used tools such as angular, javascript, java, sql server as well as the company's own tools."
+        content: "Software Developer at Clearminds. I worked in banking software consulting services where I used tools such as Angular, Javascript, Java, Sql Server as well as the company's own tools."
       }
     ]
   }
