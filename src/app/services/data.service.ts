@@ -19,7 +19,7 @@ export class DataService {
         name : "Data Bases",
         icono: environment.url+ "/assets/img/db-icon.png",
         img: environment.url+ "/assets/img/db-img.png",
-        content: "Knowledge of SQL Server, PostgreSQL, Oracle (PL / SQL), MongoDB databases."
+        content: "Knowledge of SQL Server, PostgreSQL, Oracle (PL / SQL), MongoDB databases, Business Intelligence (Pentaho)."
       },
       {
         name : "Business Inteligence",
@@ -43,18 +43,18 @@ export class DataService {
     this.experience = [
       {
         enterprise: "Grupo TVCable",
-        img: environment.url+ "/assets/img/tvcable.png",
-        content: "Intern in the company Grupo TVCable in the systems area, in the scrum of emerging projects. The internship lasted from September 1, 2016 to February 2017. In this job, I carried out quality control activities and support in the development of new company plans handling PL / SQL."
+        img: environment.url+ "/assets/img/tvcable.jfif",
+        content: "Intern in the company Grupo TVCable in the systems area, in the scrum of emerging projects.  In this job, I carried out quality control activities and support in the development of new company plans handling PL / SQL."
       },
       {
         enterprise: "Imprenta Mariscal",
         img: environment.url+ "/assets/img/imprenta.png",
-        content: "Intern at the company Imprenta Mariscal in the area of systems and databases. The internship lasted 4 months from August 2017 to November 2017. During this period, I carried out activities such as network management, computer and printer maintenance, user support, backup management, database management, among others."
+        content: "Intern at the company Imprenta Mariscal in the area of systems and databases. I carried out activities such as network management, computer and printer maintenance, user support, backup management, database management, among others."
       },
       {
         enterprise: "PACO",
         img: environment.url+"/assets/img/paco.png",
-        content: "Developer analyst at PACO comercial. The contract lasted one month in June 2019. In this period I managed the billing system developed in Java with PostgreSQL database, also handling stored procedures in the SQL Server database."
+        content: "Developer analyst at PACO comercial. I managed the billing system developed in Java with PostgreSQL database, also handling stored procedures in the SQL Server database."
       },
       {
         enterprise: "CLEARMINDS",
