@@ -22,12 +22,6 @@ export class DataService {
         content: "Knowledge of SQL Server, PostgreSQL, Oracle (PL / SQL), MongoDB databases, Business Intelligence (Pentaho)."
       },
       {
-        name : "Business Inteligence",
-        icono: environment.url+"/assets/img/bi-icon.png",
-        img: environment.url+ "/assets/img/bi-img.png",
-        content: "knowledge of business intelligence (Pentaho)."
-      },
-      {
         name : "Repositories",
         icono: environment.url+ "/assets/img/repo-icon.png",
         img: environment.url+ "/assets/img/repo-img.png",
