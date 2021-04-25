@@ -112,20 +112,116 @@ a{
 .mat-card-avatar-white::after{
     background-color: #0b6096;
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #0b6096;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  .image-popup-container{
+      display: flex;
+      margin-top: 30px;
+  }
+  .image-popup{
+      max-height: 100px;
+      max-width: 100px;
+  }
+  .about-me{
+      border: 2px solid 45494C;
+      appearance: button;
+      border-radius: 30px;
+      font-size: 17px;
+      margin-bottom: 5px;
+      background: #45494C;
+      color:white;
+      cursor: pointer;
+      padding: 10px;
+      font-weight: 500;
+  }
+  .about-me:active{
+      transform: translateY(1px);
+  }
+  .about-me:hover{
+      transform: scale(1.1);
+  }
+ 
+  a:visited{
+      color: white;
+  }
+  .meet-me{
+      font-weight: bold;
+  }
 @media only screen and (max-width: 600px) {
- .header{
-     display: block;
- }
- .skill, .experience{
-     width: 92%;
- }
- .skill{
-     border: none;
- }
- .card:hover{
-    box-shadow: 5px 10px #45494C;
+    .header{
+        display: block;
+    }
+    .skill, .experience{
+        width: 92%;
+    }
+    .skill{
+        border: none;
+    }
+    .card:hover{
+        box-shadow: 5px 10px #45494C;
+    }
+    .mat-card-avatar-white::after{
+        background-color: #45494C;
+    }
+    .image-popup-container{
+        display: flex;
+        flex-direction: column;
+    }
+   
 }
-.mat-card-avatar-white::after{
-    background-color: #45494C;
-}
+@media only screen and (max-width: 1000px) {
+    .popup{
+        width: 80%;
+    }
+    #popup1{
+        overflow: scroll;
+    }
+    
 }
