@@ -190,7 +190,7 @@ a{
       transform: translateY(1px);
   }
   .about-me:hover{
-      transform: scale(1.1);
+      font-size: 18px;
   }
   
   a{
