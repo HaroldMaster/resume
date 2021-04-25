@@ -11,8 +11,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     overflow: hidden;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     html, body { 
-        background-color: #032c62;
+        background-color: rgba(0,0,0,0.5);
     }
    }
