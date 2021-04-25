@@ -181,18 +181,30 @@ a{
       padding: 10px;
       font-weight: 500;
   }
+  .about-me:visited{
+      color: white;
+  }
   .about-me:active{
       transform: translateY(1px);
   }
   .about-me:hover{
       transform: scale(1.1);
   }
- 
+  
+  a{
+      color: #0b6096;
+      cursor: pointer;
+  }
+
   a:visited{
-      color: white;
+      color: #0b6096;
   }
   .meet-me{
       font-weight: bold;
+  }
+  .projects:hover{
+    font-size: 17px;
+    text-decoration: underline #0b6096;
   }
 @media only screen and (max-width: 600px) {
     .header{
@@ -214,7 +226,17 @@ a{
         display: flex;
         flex-direction: column;
     }
-   
+    .projects:hover{
+        text-decoration: underline;
+      }
+    a{
+        color: black;
+        cursor: pointer;
+    }
+  
+    a:visited{
+        color: black;
+    }
 }
 @media only screen and (max-width: 1000px) {
     .popup{
