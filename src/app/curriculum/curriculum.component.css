@@ -110,8 +110,7 @@ a{
     background-color: white;
 }
 .mat-card-avatar-white::after{
-    background-color: #0b6096
-    ;
+    background-color: #0b6096;
 }
 @media only screen and (max-width: 600px) {
  .header{
@@ -123,4 +122,10 @@ a{
  .skill{
      border: none;
  }
+ .card:hover{
+    box-shadow: 5px 10px #45494C;
+}
+.mat-card-avatar-white::after{
+    background-color: #45494C;
+}
 }
