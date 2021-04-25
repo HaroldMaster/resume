@@ -172,6 +172,8 @@ a{
   .about-me{
       border: 2px solid 45494C;
       appearance: button;
+      -moz-appearance: button;
+      -webkit-appearance: button;
       border-radius: 30px;
       font-size: 17px;
       margin-bottom: 5px;
