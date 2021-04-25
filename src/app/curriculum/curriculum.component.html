@@ -1,12 +1,12 @@
 <div class="contenedor">
     <div class="header">
       <div class="img-github hijo" *ngIf="_git.getUser | async as harold">
-        <h1>{{ harold.name }}</h1>
         <img
           class="avatar-harold"
           src="{{ harold.avatar_url }}"
           alt="Img Harold"
         />
+        <h1 class='nombre'>{{ harold.name }}</h1>
         <p>{{ harold.bio }}</p>
         <a href="https://github.com/HaroldMaster" target="_blank"
           ><i class="fab fa-github"></i
