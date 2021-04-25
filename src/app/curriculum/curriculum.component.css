@@ -54,6 +54,7 @@ i{
     padding: 10px;
     display: inline-block;
     color: black;
+    cursor: pointer;
 }
 i:hover{
     transform: translateY(-10px) scale(1.3);
@@ -64,6 +65,40 @@ a{
 }
 .img-content{
     max-height: 200px;
+}
+
+.mat-card-avatar{
+    position: relative;
+    display: inline-block;
+    backface-visibility: hidden;
+}
+.mat-card-avatar:hover{
+    transform: translateY(0px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+}
+.mat-card-avatar:hover::after{
+    transform: scale(1.4);
+    opacity: 0;
+}
+
+.mat-card-avatar::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  .mat-card-avatar-white{
+    background-color: transparent;
+}
+.mat-card-avatar-white::after{
+    background-color: #0b6096
+    ;
 }
 @media only screen and (max-width: 600px) {
  .header{

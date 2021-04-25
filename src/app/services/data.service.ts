@@ -11,7 +11,7 @@ export class DataService {
     this.skills = [
       {
         name : "Programming Languages",
-        icono: environment.url + "/assets/img/algoritmo.png",
+        icono: environment.url+"/assets/img/algoritmo.png",
         img: environment.url+ "/assets/img/programming.png",
         content: "Knowledge of Java, C #, JavaScript (Node, React, React Native with Expo, Angular, Typescript), HTML, CSS, Sass (BEM)"
       },
