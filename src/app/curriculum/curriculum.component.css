@@ -228,17 +228,9 @@ a{
     }
     i:hover,i:active{
         transform: none;
+        user-select: none;
     } 
-    i:focus{
-        transform: translateY(-5px);
-    }
-    .projects:hover{
-        font-size: inherit;
-        text-decoration: none;
-      }
-    .projects:focus{
-        font-size: 15px;
-    }
+
 }
 @media only screen and (max-width: 1000px) {
     .popup{
